@@ -16,8 +16,8 @@ export default function Home() {
             alt="Picture of myself"
           />
           <div style={{ paddingLeft: 10 }}>
-            <h1>Jack G.</h1>
-            <h3>Software Engineer</h3>
+            <h1>Jack G</h1>
+            <h3>software engineer</h3>
           </div>
         </div>
         <div style={{ marginTop: '1rem' }}>
