@@ -4,92 +4,72 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div>
+        <div style={{
+          display: 'flex',
+          alignItems: 'end',
+        }}>
+          <Image
+            src="/profile.jpg"
+            width={100}
+            height={100}
+            alt="Picture of myself"
+          />
+          <div style={{ paddingLeft: 10 }}>
+            <h1>Jack G.</h1>
+            <h3>Software Engineer</h3>
+          </div>
+        </div>
+        <div style={{ marginTop: '1rem' }}>
+          <h2>about me</h2>
+          <ul>
+            <li>
+              <b>working @</b>
+              <ul style={{ marginLeft: 10 }}>
+                <li>
+                  <a href="https://www.ridgelineapps.com/">Ridgeline</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>previously built</b>
+              <ul style={{ marginLeft: 10 }}>
+                <li>
+                  <a href="https://brandwise.ai/">Brandwise</a>
+                </li>
+                <li>
+                  <a href="https://www.behance.net/gallery/112751903/Nexus-Web-Site-Mobile-App">Nexus</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>previously worked @</b>
+              <ul style={{ marginLeft: 10 }}>
+                <li>
+                  <a href="https://tryascend.com/">Ascend Finance</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div style={{ marginTop: '1rem' }}>
+          <h2>find me</h2>
+          <ul>
+            <li>
+              <a href="https://blog.jackgisel.com">blog</a>
+            </li>
+            <li>
+              <a href="mailto:j@ckgisel.com">j@ckgisel.com</a>
+            </li>
+            <li>
+              <a href="https://x.com/jackgisel">X</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jackgisel/">linkedin</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </main >
   );
 }
